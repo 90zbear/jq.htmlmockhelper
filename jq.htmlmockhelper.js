@@ -27,12 +27,12 @@
 				var defCount = defaultDummy.length;
 				var repeatText = Math.floor(setting['text'] / defCount) + 2;
 
-				var strText = new String();
+				var strText = setting['text']+"文字分のダミーテキスト。";
 				for (var i = 0; i < repeatText; i++) {
 					strText += defaultDummy;
 				};
 				var txt = new String();
-				if ( setting['text'] > defaultDummy.length ){
+				if ( setting['text'] < defaultDummy.length ){
 					txt = strText.substr( 0, setting['text'] );
 				}else{
 					txt = strText;
