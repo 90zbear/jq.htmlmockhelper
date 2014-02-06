@@ -40,6 +40,16 @@
 				$(this).html(txt);
 			});
 		}
-
+		// headline
+		if( setting['mode'] == "headline"){
+			var count;
+			var msg;
+			$("h1,h2,h3,h4,h5,h6,h7").each(function(){
+				var count = $(this).text().length;
+				var msg = "<div style=\"position:relative;top:-10px;right:-10px;padding:5px;background-color:rgba(0,0,0,.5);color:#fff;display:inline-block;font-size:9pt;font-weight:nomal;\">"+ count +"文字</div>";
+				$(this).append( msg );
+				$(this).css({'border':'1px solid #efefef;'});
+			});
+		}
 	}
 })(jQuery);

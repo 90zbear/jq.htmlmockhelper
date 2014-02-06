@@ -7,6 +7,7 @@
 	<script type="text/javascript" src="jq.htmlmockhelper.js"></script>
 	<script>
 		$(function(){
+			$("body").htmlmockhelper({"mode" : "headline"});
 			$("#demo1").htmlmockhelper({"mode" : "repeat", "repeat" : 4});
 			$("#demo2").htmlmockhelper({"mode" : "repeat", "repeat" : 3});
 			$("#dummyTxtDemo").htmlmockhelper({"mode" : "text", "text" : 300, "textstr" : "これはダミーテキストです。"});
@@ -14,6 +15,8 @@
 	</script>
 </head>
 <body>
+	<h1>aaaaa</h1>
+
 	<div id="demo1">
 		<div class="copyobj">こいつを繰り返したい</div>
 	</div>
