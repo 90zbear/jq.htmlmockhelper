@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+	<meta charset="UTF-8">
+	<title>jq.htmlmockhelper</title>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jq.htmlmockhelper.js"></script>
+	<script>
+		$(function(){
+			$("#demo1").htmlmockhelper({"mode" : "repeat", "repeat" : 4});
+			$("#demo2").htmlmockhelper({"mode" : "repeat", "repeat" : 3});
+		});
+	</script>
+</head>
+<body>
+	<div id="demo1">
+		<div class="copyobj">こいつを繰り返したい</div>
+	</div>
+
+	<div id="demo2">
+		<div class="copyobj">こいつを繰り返したい2</div>
+	</div>
+
+</body>
+</html>
