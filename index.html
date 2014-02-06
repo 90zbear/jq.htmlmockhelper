@@ -9,6 +9,7 @@
 		$(function(){
 			$("#demo1").htmlmockhelper({"mode" : "repeat", "repeat" : 4});
 			$("#demo2").htmlmockhelper({"mode" : "repeat", "repeat" : 3});
+			$("#dummyTxtDemo").htmlmockhelper({"mode" : "text", "text" : 300, "textstr" : "これはダミーテキストです。"});
 		});
 	</script>
 </head>
@@ -19,6 +20,10 @@
 
 	<div id="demo2">
 		<div class="copyobj">こいつを繰り返したい2</div>
+	</div>
+
+	<div id="dummyTxtDemo">
+		<p class="dummy">書き換わるやつ</p>
 	</div>
 
 </body>
